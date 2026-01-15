@@ -1,4 +1,5 @@
 #include "circle.h"
+#include <cmath>
 
 Circle::Circle(double radius): _radius(radius){
 
@@ -7,10 +8,10 @@ Circle::~Circle(){
 
 }
 double Circle::Area()const{
-    return 3.1415954 * _radius * _radius;
+    return M_PI * _radius * _radius;
 }
 double Circle::Perimeter()const{
-    return 2 * 3.1415954 * _radius;
+    return 2 * M_PI * _radius;
 }
 string Circle::ToString()const{
     return "Circle";
