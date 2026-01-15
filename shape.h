@@ -4,13 +4,13 @@
 #include <string>
 using std::string;
 
-class Shape{
+class Shape{ // Abstract
 
 public:
     Shape();
     ~Shape();
-    virtual double Perimeter()const;
-    virtual double Area()const;
+    virtual double Perimeter()const=0;
+    virtual double Area()const=0; // Virtual pure
     virtual string ToString()const;
 };
 

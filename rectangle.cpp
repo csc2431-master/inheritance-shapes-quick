@@ -18,7 +18,7 @@ double Rectangle::Area()const{
     return _length * _width;
 }
 string Rectangle::ToString()const{
-    return "Rectangle";
+    return Shape::ToString() + ": Rectangle";   //"Shape: Rectangle"
 }
 double Rectangle::GetDiagonal()const{
     return sqrt(pow(_width, 2.0) + pow(_length, 2.0));
